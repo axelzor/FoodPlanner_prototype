@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+    <include
+        android:id="@+id/include16"
+        layout="@layout/home_settings_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_scan"
+        android:layout_width="95dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="158dp"
+        android:background="#FFFFFF"
+        android:onClick="onClick"
+        android:scaleType="center"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include16"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/btn_scan_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="110dp"
+        android:onClick="onClick"
+        android:text="@string/scan_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_scan" />
+
+    <Button
+        android:id="@+id/btn_add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="217dp"
+        android:onClick="onAddItemClick"
+        android:text="@string/btntext_add_items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview_add_product" />
+
+    <ListView
+        android:id="@+id/listview_add_product"
+        style="@android:style/Widget.DeviceDefault.ExpandableListView"
+        android:layout_width="203dp"
+        android:layout_height="262dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/border"
+        android:choiceMode="multipleChoice"
+        android:entries="@array/ingredients"
+        app:layout_constraintEnd_toStartOf="@+id/edit_banana_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_scan">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/edit_banana_quantity"
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include16" />
+
+    <EditText
+        android:id="@+id/edit_apple_quanitity"
+        android:layout_width="133dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_banana_quantity" />
+
+    <include
+        android:id="@+id/include15"
+        layout="@layout/lower_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_cream_quantity"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_apple_quanitity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,159 @@
+<resources>
+    <!-- Generellt -->
+    <string name="app_name">FoodPlanner_prototype</string>
+    <string name="name">FoodPlanner</string>
+    <string name="new_items">Nya varor finns att lägga till</string>
+    <string name="items_near_date">Varor håller på att gå ut</string>
+    <string name="show">Visa</string>
+
+    <!-- Login -->
+    <string name="msg_welcome">Välkommen till appen!</string>
+    <string name="username">Användarnamn</string>
+    <string name="password">Lösenord</string>
+    <string name="login">Logga in</string>
+    <string name="login_google">Logga in med Google</string>
+    <string name="login_facebook">Logga in med Facebook</string>
+
+
+    <!-- Bildbeskrivningar -->
+    <string name="desc_logo">Bild på FoodPlanners logga</string>
+    <string name="desc_home">Knapp för att komma till hem-sidan</string>
+    <string name="desc_settings">Knapp för att komma till inställningar</string>
+
+    <!-- Knappar -->
+    <string name="btntext_mat_hemma">Mat där hemma</string>
+    <string name="btntext_recept">Recept</string>
+    <string name="btntext_inkop">Inköpslista</string>
+    <string name="btntext_findrecipes">Hitta recept</string>
+    <string name="txt_search">Sök på matvara</string>
+
+    <!-- Ingredienser -->
+    <string-array name="ingredients">
+        <item>Banan (st)</item>
+        <item>Äpple (st)</item>
+        <item>Grädde (dl)</item>
+    </string-array>
+    <string name="header_bought">Inköpsdatum</string>
+    <string name="header_out">Utgångsdatum</string>
+    <string name="quantity_volume">Antal/volym</string>
+    <string name="remove">Ta bort</string>
+
+    <!-- Recept -->
+    <string name="rice">Ris (kg)</string>
+    <string name="meat">Nötfärs (g)</string>
+    <string name="cream">Grädde (dl) </string>
+    <string name="rice_weight">2</string>
+    <string name="meat_weight">500</string>
+    <string name="cream_volume">5</string>
+    <string-array name="recipes">
+        <item>
+            Gräddiga köttbullar med ris
+        </item>
+        <item>
+            Krämig köttfärsgryta med paprika
+        </item>
+        <item>
+            Gräddig köttfärs med ris
+        </item>
+    </string-array>
+    <string-array name="recipe_ingredients">
+        <item>1kg ris</item>
+        <item>500g köttfärs</item>
+        <item>2dl grädde</item>
+    </string-array>
+    <string-array name="recipe_instructions">
+        <item>
+            1. Koka upp riset
+        </item>
+        <item>
+             2. Stek köttfärsen
+        </item>
+        <item>
+            3. Häll i grädden
+        </item>
+        <item>
+            4. Servera den krämiga köttfärsen med ris
+        </item>
+    </string-array>
+
+
+    <!-- Inställningar -->
+    <string name="btntext_language">Språk</string>
+    <string name="btntext_notifications">Notiser</string>
+    <string name="btntext_homeview">Välj hemmavy</string>
+    <string name="btntext_logout">Logga ut</string>
+    <string name="btntext_tips">Tipsa oss</string>
+    <string name="btntext_help">Hjälp</string>
+    <string name="btntext_save_settings">Spara inställningar</string>
+
+
+    <string-array name="homescreen">
+        <item>
+            Mat där hemma
+        </item>
+        <item>
+            Recept
+        </item>
+        <item>
+            Inköpslista
+        </item>
+    </string-array>
+
+
+    <!-- Inköp -->
+
+    <string-array name="shopping_list">
+        <item>
+            Falukorv 1 (kg)
+        </item>
+        <item>
+            Potatismos 2 (kg)
+        </item>
+        <item>
+            Ägg 4 (st)
+        </item>
+        <item>
+            Havregryn 2 (kg)
+        </item>
+        <item>
+            Apelsin 4 (st)
+        </item>
+        <item>
+            Yoghurt 2 (l)
+        </item>
+    </string-array>
+
+    <string name="save">Spara ändringar</string>
+
+
+    <!-- Lägga till varor-->
+    <string name="scan_code">Scanna streckkod</string>
+
+    <string name="add_manually">Lägg till manuellt</string>
+
+    <integer-array name="amounts">
+        <item>
+            1
+        </item>
+        <item>
+            2
+        </item>
+    </integer-array>
+
+    <string name="btntext_add_items">Lägg till varor</string>
+    
+    <!-- Nära utgångsdatum -->
+    <string-array name="near_date">
+        <item>
+            Banan 3st, 1 dag
+        </item>
+        <item>
+            Äpple 1st, 2 dagar
+        </item>
+        <item>
+            Grädde 1dl, 3 dagar
+        </item>
+    </string-array>
+
+
+</resources>

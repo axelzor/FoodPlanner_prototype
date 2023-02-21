@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <include
+        android:id="@+id/include13"
+        layout="@layout/home_settings_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="342dp"
+        android:layout_height="442dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/include14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include13"
+        app:layout_constraintVertical_bias="0.517">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_language"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="@string/btntext_language" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/btn_notifications"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="@string/btntext_notifications" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/txt_choosehome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btntext_homeview" />
+
+        <Spinner
+            android:id="@+id/spinner_home"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:entries="@array/homescreen" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_tips"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:text="@string/btntext_tips" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/btn_help"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:text="@string/btntext_help" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:onClick="onLogoutClick"
+            android:text="@string/btntext_logout" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_savechanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="22dp"
+        android:onClick="onSaveClick"
+        android:text="@string/btntext_save_settings"
+        app:layout_constraintBottom_toTopOf="@+id/include14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <include
+        android:id="@+id/include14"
+        layout="@layout/lower_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
